@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // (조건식)? 참일때:거짓일때;
+        var a = 24;
+        var b = 95;
+        var c = 46;
+        var max=a>b?a:b;
+        max = max>c?max:c;
+        var min = b>c?c:b;
+        min = min>a?a:min;
+        var mid = max>a && a>min?a:b
+        mid = max>b && b>min?b:c
+
+        document.write(max,mid,min)
+
+
+    </script>
+</head>
+<body>
+</body>
+</html> 
