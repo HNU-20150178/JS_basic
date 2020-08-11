@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<script>
+    //3개의 정수를 입력받아서 대중소 구하기
+        var a=prompt("a 값 입력");
+        var b=prompt("b값 입력");
+        var c=prompt("c값 입력");
+        if (a<b){
+            imsi=a;
+            a=b;
+            b=imsi;
+        }
+        if(a<c){
+            imsi=a;
+            a=c;
+         c=imsi;
+        if(b<c){
+            imsi=b;
+            b=c;
+            c=imsi;
+        }
+        document.write("max"+a+"<br>");
+        document.write("mid"+b+"<br>");
+        document.write("min"+c+"<br>");
+</script>    
+</body>
+</html>
