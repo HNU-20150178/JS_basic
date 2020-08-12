@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       // while의 제어문을 설정하는 여러 방법 위로 갈수록 효율적.
+      //키보드로 5개의 데이터 입력 합계를 출력
+      var tot =0 ;
+      var cnt = 0;
+      while(cnt<5){
+          var a1 = parseInt(prompt("입력"));
+          cnt++;
+          tot+=a1;
+      }
+      document.write("합계",tot);
+      
+      
+      
+      /*
+      var tot =0 ;
+      var cnt = 0
+      while(true){
+        a1 = parseInt(prompt("입력"));
+        tot += a1;
+        cnt++;
+        if (cnt==5){
+            break;
+
+        }  
+      }
+      document.write(tot);
+      */
+      /*a1 = parseInt(prompt("입력"));
+      tot += a1;
+      a1 = parseInt(prompt("입력"));
+      tot += a1;
+      a1 = parseInt(prompt("입력"));
+      tot += a1;
+      a1 = parseInt(prompt("입력"));
+      tot += a1;
+      a1 = parseInt(prompt("입력"));tot += a1;
+    document.write(tot);
+    */
+    </script>
+</body>
+</html>

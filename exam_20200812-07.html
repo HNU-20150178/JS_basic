@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       // 1~100 정수 출력)(단,한줄에 10개씩)
+
+       var i = 0;
+       var sw = 0;
+    var otot = 0;
+    var etot = 0;
+     
+       while(i<100){
+        i++;
+         if (sw==0){
+            otot+=i;
+            document.write(i," ");
+            if (i%10 == 0){
+                document.write("<br>")
+            }
+            sw=1;
+           }
+        else{
+            etot+=i;
+            sw=0;
+            document.write(i," ");
+            if (i%10 == 0){
+                document.write("<br>")
+                }
+        }
+    }
+    document.write("홀수의 합 ",otot,"<br>");
+    document.write("짝수의 합 ",etot," ");
+    </script>
+</body>
+</html>
