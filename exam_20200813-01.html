@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+   while(true){
+       var dec = parseInt(prompt("입력해봐"));
+       if(dec==-99){
+           break;
+       }
+       if(dec<2 || dec>100){
+           document.write("입력오류<br>");
+           continue;
+       }
+       //변환
+       var mok=dec;
+       var bin="";
+       while(mok!=0){
+            na=mok%2;
+            bin=na+bin;
+            mok=parseInt(mok/2);
+        }
+
+    document.write("10진수 : ",dec,"<br>");
+    document.write("2진수 : ",bin,"<br>");
+   }
+    
+
+    </script>
+</body>
+</html>

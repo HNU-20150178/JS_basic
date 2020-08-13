@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //급여를 입력받아서 화폐단위별 매수 출력
+        /*
+            급여 : 375429
+            50000 : 7
+            ....
+            1 : 4
+
+
+        */
+       var pay=parseInt(prompt('급여'));
+       var money=50000;
+       var flag=true;
+       while(pay>0){
+           document.write(money+":");
+           var mok=parseInt(pay/money);
+           document.write(mok+'<br>');
+           pay%=money;
+           if(flag){
+               flag=false;
+               money=parseInt(money/5);
+           }else{
+               flag=true;
+               money=parseInt(money/2);
+           }
+       }
+    </script>
+</body>
+</html>
