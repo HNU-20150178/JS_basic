@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 소수만들기
+    var cnt = 0;
+    var sum = 0;
+    for(var i = 2; i <=100; i++){
+        for(var k = 2; k<=i; k++){
+            if (i % k ==0){
+                if (i == k ){
+                document.write(i, " ");
+                sum+=i
+                cnt++;
+                if(cnt%5==0){
+                    document.write("<br>");
+                }
+                break;
+            }break;
+        }
+        }
+                
+    }
+
+    
+
+    </script>
+    
+</body>
+</html>

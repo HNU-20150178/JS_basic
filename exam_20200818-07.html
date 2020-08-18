@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // 별은 13579 나오게 만들어야합니다.
+       for (var x = 1;x<=5;x++){
+           for(var y = 1;y<=x*2-1;y++){
+               document.write("*");
+           }
+           document.write("<br>");
+       }
+       document.write("---------------------<br>");
+
+       for (var x = 1;x<=5;x++){
+           for(var k=1; k<=6-x;k++){
+               document.write("&nbsp");
+           }
+           for(var y=1;y<=x*2-1; y++){
+           document.write("*");
+           }
+           document.write("<br>");
+       }
+       document.write("---------------------<br>");
+
+       for(var i = 5;i>=1;i--){
+            for(var x =0;x<=6-i;x++){
+               document.write("&nbsp")
+           }
+           for(var k = 0;k<=i*2-1;k++){
+               document.write("*");
+           }
+           document.write("<br>");
+       }
+    </script>
+    
+</body>
+</html>
