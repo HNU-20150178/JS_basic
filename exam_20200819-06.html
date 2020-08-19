@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   // 10진수를 2진수로 변환
+   var a = prompt("10진수입력"); //25
+        var bin ="";
+        var mok = a;  // 25일경우
+        while(mok!=0){
+            var na = mok%2; // 입력값 나머지 1
+            mok = parseInt(mok/2); //입력값 나누기 2
+            bin = na + bin;
+        }
+        document.write(bin);1
+        
+    </script>
+    
+</body>
+</html>

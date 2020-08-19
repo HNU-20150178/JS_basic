@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arr 배열에 n개의 데이터가 저장되었을 때 데이터 합계, 평균을 구하여 출력
+        var myarr = new Array(10,20,30,40,50);
+        var sum = 0;
+        var ave= 0;
+        var cnt = 0;
+        for(var i = 0;i<5;i++){
+            document.write(myarr[i],"<br>");
+            sum+=myarr[i]; // 합
+            cnt++;          
+        }
+        ave=sum/cnt;
+        document.write("합",sum);
+        document.write("통계",ave);
+        document.write("반복횟수:",cnt);
+    </script>
+    
+</body>
+</html>

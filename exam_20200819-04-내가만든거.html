@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      /* n개의 배열에 키보드로부터 정수(50~100)입력받아서 배열에 저장후 출력
+      단, 입력자료가 입력범위가 벗어나면 오류 처리하고 재입력
+      입력자료중 -99는 입력자료의 끝을 의미한다.
+      -99가 기입되면 입력된자료를 모두 출력하고 마지막에 합계와 평균을 구하여 출력
+      */
+        var sum = 0;
+        var ave = 0;
+        var myarr = new Array();
+        var i = 0;
+        while(true){
+            var data = Number(prompt("입력하세요오오오"));
+            if(data==-99){
+                break;
+            }
+            if(data<50||data>100){
+                alert("오류! 오류!")
+                continue;
+            }
+            myarr[i]=data
+            i++;
+        }
+        for(var x = 0;x<myarr.length;x++){
+            sum=+myarr[x];
+            document.write("<br>",myarr[x]);
+        }
+
+        var ave = sum/myarr.length;
+        document.write("<br>")
+        document.write("합",sum);
+        document.write("평",ave);
+        
+        
+        
+        
+
+
+
+    
+    
+    </script>
+    
+</body>
+</html>

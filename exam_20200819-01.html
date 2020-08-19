@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a;  // 일반 변수 선언
+        a = 100; // 값 대입
+        document.write("a=",a,"<br>");
+
+        var arr = new Array(); // 배열선언 1번 방법
+        //arr=100
+        arr[0]=100;
+        arr[1]=200;
+        arr[2]=300;
+        document.write("arr=",arr,"<br>");
+        document.write("arr[0]=",arr[0],"<br>");
+        document.write("arr[1]=",arr[1],"<br>");
+        document.write("arr[2]=",arr[2],"<br>");
+
+        var Student = ["윤홍철","김재중","홍윤기","오성택"]; // 배열선언 2번 방법
+   
+        document.write("Student=",Student,"<br>");
+        document.write("Student[0]=",Student[0],"<br>");
+        document.write("Student[1]=",Student[1],"<br>");
+        document.write("Student[2]=",Student[2],"<br>");
+
+
+
+
+
+
+        document.write("=============================");
+
+        var arrColor = new Array();
+        for(var i=0; i <3; i++){
+            arrColor[i]="color"+i;
+            document.write(arrColor.length,"<br>");
+        }
+
+        for(var i=0;i<arrColor.length;i++){
+            document.write(arrColor[i],"<br>");
+        }
+
+    </script>
+    
+</body>
+</html>

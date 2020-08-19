@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //16진수 변환
+
+        var fin = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+        var a = prompt("10진수입력"); //25
+        var b = prompt("변환할 진수입력");
+        var bin = "";
+        var mok=a;
+        while(mok!=0){
+            var na=mok%b;
+            bin = fin[na]+bin;
+            mok = parseInt(mok/b);
+        }
+        document.write("원래 값",a,"<br>");
+        document.write("표현할",b,"진수는",bin,"<br>");
+    </script>
+    
+</body>
+</html>
