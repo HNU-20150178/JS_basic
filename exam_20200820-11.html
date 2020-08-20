@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열에 5명의 사원의 급여가 저장되어 있다.
+        //화폐단위별 매수를 출력하는 프로그램을 작성하라
+        //출력형식
+        /* 급여 50000   10000   5000  1000  500 100 50  10  5   1
+        */
+        var sawon = new Array(576950, 354300,219850,457895,378766);
+        var money = new Array(50000,10000,5000,1000,500,100,50,10,5,1);
+        var sum = [0,0,0,0,0,0,0,0,0,0];
+        for (var x = 0; x<sawon.length; x++){
+                document.write(sawon[x]," : ");
+                var pay = sawon[x];
+                for(var y=0;y<money.length;y++){
+                    var mok = parseInt(pay/money[y]);
+                    document.write(mok + "&nbsp;&nbsp;");
+                    pay = pay % money[y];
+                }
+                document.write("<br>");
+        }
+
+        
+
+
+    </script>
+    
+</body>
+</html>

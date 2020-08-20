@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //n개의 배열에 키보드로 데이터를 입력 후 최대,최소값 구하기(0~100)
+        //입력자료는 최대 10개 또는 입력자료가 -99면 입력자료의 끝
+       var score = new Array();
+       var cnt=0;
+       var bignum=-1;
+       var smallnum = 101;
+       while(cnt<10){
+           var a = prompt("입력 ㄱㄱ싱");
+           if(a==-99 || cnt == 3){
+               break;
+           }
+           if(a>=0 && a<=100){
+                score[cnt]=a;
+                cnt++;
+                for(var x = 0; x<cnt;x++){
+                    if(score[x]<smallnum){
+                        smallnum=score[x];
+                    }
+                    if(score[x]>bignum){
+                        bignum=score[x];
+                    }
+                }
+           }
+           else{
+               alert("입력오류");
+           }
+           
+           
+
+           /*
+           for(var x=0;x<cnt;x++){
+               document.write(score[x],"<br>");
+           }
+          
+           for(var x=0; x<score.length; x++){
+               document.write(score[x+"<br>"]); //위에나 밑이나 가틍ㅁ 
+           }*/
+
+       }
+       document.write(score);
+       document.write("최소",smallnum);
+       document.write("최대",bignum);
+       
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*n개의 배열에 키보드로 데이터를 입력 후 최대, 최소값을 뺀 나머지합계를 구하여 출력하는 프로그램 작성
+        1. 입력자료의 범위(0~100) 이외의 값이 입력되면 " 오류처리"
+        2.입력자료는 최대 10개 또는 입력자료가 -99이면 입력자료의 끝
+        3. 출력형식
+            입력자료 : x    x   x   x   x   x
+            최대값 : xx
+            최소값 : xx
+            최대-최소 합계 : xx
+            */
+
+            var score = new Array();
+            var cnt = 0;
+            while(cnt<10){
+                var a = parseInt(prompt("입력"));
+                if (a==99){
+                    break;
+                }
+                if(a<1 || a>100){
+                    alert("입력오류");
+                    continue;
+                }
+                score[cnt]=a;
+                cnt++;
+            }
+            document.write("입력자료: ", score); //score로 치면값은 콤마로 구분됨
+            var max=score[0]; // 0
+            var min=score[0]; // 101
+            var tot=score[0]; // 0
+            for(var x=1; x<score.length; x++){
+                tot +=score[x];
+                if(max < score[x]){
+                    max=score[x];
+                }
+                if(min > score[x]){
+                    min = score[x];
+                }
+            }
+        document.write("<br>최대값 :",max,"<br>");
+        document.write("최소값 :",min,"<br>");
+        document.write("최대-최소 합계 :",tot);
+    </script>
+    
+</body>
+</html>

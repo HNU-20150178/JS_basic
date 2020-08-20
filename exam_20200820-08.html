@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.for()
+        var money=[50000,10000,5000,1000,500,100,50,10,5,1];
+        var pay = parseInt(prompt());
+        for(var x = 0 ; x <money.length;x++){
+            document.write(money[x],"원 : ");
+            var mok = parseInt(pay/money[x]);
+            document.write(mok,"<br>");
+            pay = pay % money[x];
+
+        }
+
+        
+
+
+    </script>
+    
+</body>
+</html>
