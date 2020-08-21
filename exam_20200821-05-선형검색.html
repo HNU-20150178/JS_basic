@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //선형검색
+
+    var a = [60,50,90,80,70,75,80];
+    var result = 0;
+    var s = prompt("찾을값");
+    var flag = true;
+    for(var x=0;x<a.length;x++){
+        if(a[x]==s){
+            document.write(x,"번쨰에 있어 ! <br>");
+            flag = false;
+            //break;
+        }
+    }
+    if(flag){
+        document.write(s,"값은 없다");
+    }
+
+    </script>
+    
+</body>
+</html>

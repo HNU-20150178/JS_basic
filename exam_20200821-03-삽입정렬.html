@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Insertion sort
+        //배열 a 에 저장된 값중에서 평균에 가장 가까운 값을 찾아서 출력
+        var myarr = [60,50,90,80,70];
+        var tot = 0;
+        document.write(myarr+"<br>");
+        for(var x = 0; x<myarr.length;x++ ){
+            tot += myarr[x]
+        }
+        var ave = parseInt(tot/myarr.length);
+        var min =myarr[0];
+        for(var x = 0; x<myarr.length;x++){
+            if(min>myarr[x]){
+                min=myarr[x];
+            }
+        }
+        document.write("평균값 : ",ave,"<br>")
+        document.write("최소값 : " , min);
+
+/*
+    var min = 0;
+        for(var x = 0; x<myarr.length-1;x++ ){
+           for(var y = 1; y<myarr.length+1;y++){
+               if(myarr[x]-ave>myarr[y]-ave){
+                   var imsi = myarr[x]
+                   myarr[x] = myarr[y]
+                   myarr[y] = imsi;
+               }
+           }
+        }
+*/
+/*
+        for(var x=0; x<myarr.length;x++){
+        document.write(myarr[x]+"&nbsp") // 콤마  표기 해주기 싫어서 사용
+        }
+        document.write("최소값은 배열의 0번째 : ",myarr[0],"<br>");
+        document.write("최대값은 배열의 length번째 : ",myarr[myarr.length-1],"<br>");
+        */
+    </script>
+    
+</body>
+</html>

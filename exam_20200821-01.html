@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Selection sort
+    var myarr = [60,50,90,80,70];
+    document.write(myarr+"<br>");
+    for(var x = 0;x<myarr.length-1;x++){ // Selection sort의 기준은 실제갯수 -1 만큼 해주는거 알지 홍철아?
+        for(var y = x+1;y<myarr.length;y++){ // 비교대상이 0부터 시작하면 안되지? 그래서 이렇게 비교해준다.
+            if(myarr[x]>myarr[y]){
+                var imsi = myarr[x]
+                myarr[x] = myarr[y];
+                myarr[y] = imsi;
+          
+            }
+        }
+    }
+    for(var x=0; x<myarr.length;x++){
+        document.write(myarr[x]+"&nbsp") // 콤마  표기해 주기 싫어서 사용
+    }
+    
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //석차구하기
+    var a = [60,50,90,80,70];
+    for(var x = 0;x<a.length; x++){ // x는 기준
+        var r=1;// 자기자신은 1등이다. 
+        document.write(a[x] , " : ");
+        for(var y = 0;y<a.length; y++){ // y는 비교대상
+            if(a[x]<a[y]){  //기준인 x보다 비교대상이 더 크다면
+                r++; // 석차를 증가시켜준다.
+            }
+        }
+        document.write(r+"<br>")
+    }  
+    
+
+
+
+    </script>
+    
+</body>
+</html>
